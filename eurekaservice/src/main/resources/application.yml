@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eurekaserver
+  security:
+     basic:
+       enabled: true
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+#Evita a mensagem de alerta do servidor Eureka
+  server:
+    enable-self-preservation: true
+    expected-client-renewal-interval-seconds: 30
